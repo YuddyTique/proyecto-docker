@@ -62,3 +62,4 @@ eda7ec1f732e   X seconds ago  CMD ["uvicorn" "app.main:app" "--host" "0.0.…   
 <missing>      X seconds ago  ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFER…   0B        buildkit.dockerfile.v0
 ```
 La capa de dependencias (`/install`) añade únicamente **55 MB** netos sobre la imagen base `python:3.14-slim`, demostrando la eficiencia del patrón multi-etapa.
+

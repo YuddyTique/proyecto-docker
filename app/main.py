@@ -54,3 +54,4 @@ def check_db_connection():
             status_code=503,
             detail=f"Error conectando a la base de datos: {str(e)}"
         )
+

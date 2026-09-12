@@ -29,3 +29,4 @@ Este documento define la matriz numerada de requisitos de infraestructura tecnol
 | **Proxy Inverso** | `nginx:1.30-alpine` | 80 | Enrutar peticiones entrantes hacia la API backend (`http://api:8000`) preservando headers HTTP. Único servicio con puerto expuesto al host (`8080:80`). |
 | **API Backend** | `python:3.14-slim` | 8000 | Conexión a PostgreSQL vía red interna privada. Construcción multi-etapa para reducción de superficie de ataque y tamaño de imagen. |
 | **Base de Datos** | `postgres:18-alpine` | 5432 | Almacenamiento persistente en volumen Docker con nombre (`pgdata`). Restricción de memoria para entornos de bajos recursos (`shared_buffers=32MB`, `max_connections=20`). |
+
