@@ -1,0 +1,15 @@
+# Entorno y variables sensibles (RI-05)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Editores y Sistema Operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
