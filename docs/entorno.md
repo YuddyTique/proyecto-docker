@@ -28,12 +28,24 @@ Este documento registra la instalación y verificación de **Docker Engine** (si
 ---
 
 ## 2. Integrante 2: Yuddy Tique
-- **Sistema Operativo:** Windows 11 (con WSL2) / Ubuntu Linux
-- **Entorno de Ejecución:** WSL2 Ubuntu / Linux nativo
-- **Ruta de Instalación:** Apartado 2B / 2A (Docker Engine nativo)
-- **Versión de Docker Engine:** `Docker version 29.x`
-- **Versión de Docker Compose:** `Docker Compose version v2.x`
-- **Verificación de Contenedor:** `hello-world` ejecutado correctamente.
+- **Sistema Operativo:** Windows 11 Home Single Language (versión 24H2 / compilación SO 26100.8246)
+- **Entorno de Ejecución:** WSL2 (Subsistema de Windows para Linux v2) con distribución Ubuntu 24.04 LTS
+- **Ruta de Instalación:**  Apartado 2B (WSL2) + Apartado 2A (Docker Engine nativo sobre Ubuntu)
+- **Versión de Docker Engine:** Docker version 29.8.0, build 88096ef
+- **Versión de Docker Compose:** Docker Compose version v5.5.1
+- **Verificación de Contenedor:** 
+  ```text
+  Hello from Docker!
+  This message shows that your installation appears to be working correctly.
+
+  Unable to find image 'hello-world:latest' locally
+  latest: Pulling from library/hello-world
+  4f55086f7dd0: Pull complete
+  d5e71e642bf5: Download complete
+  Digest: sha256:5e23090353324d887c48ad5e5c56d294eab81588df9605b07d1afe895f9cc8f8
+  Status: Downloaded newer image for hello-world:latest
+  ```
+
 - **Incidencias y Resoluciones:** Entorno sincronizado para clonación y pruebas en el repositorio remoto.
 
 ---
